@@ -29,22 +29,28 @@ namespace Adapter_Pattern
 
         public int getPegiAllowedAge()
         {
-
-            switch (computerGame.getPegiAgeRating())
+        
+            if (computerGame.getPegiAgeRating() == PegiAgeRating.P3)
             {
-                case PegiAgeRating.P3:
-                    return 3;
-                case PegiAgeRating.P7:
-                    return 7;
-                case PegiAgeRating.P12:
-                    return 12;
-                case PegiAgeRating.P16:
-                    return 16;
-                case PegiAgeRating.P18:
-                    return 18;
-                default:
-                    return 0; 
+                return 3;
             }
+            else if (computerGame.getPegiAgeRating() == PegiAgeRating.P7)
+            {
+                return 7;
+            }
+            else if (computerGame.getPegiAgeRating() == PegiAgeRating.P12)
+            {
+                return 12;
+            }
+            else if (computerGame.getPegiAgeRating() == PegiAgeRating.P16)
+            {
+                return 16;
+            }
+            else if (computerGame.getPegiAgeRating() == PegiAgeRating.P18)
+            {
+                return 18;
+            }
+            return 0;
         }
 
         public bool isTripleAGame()
