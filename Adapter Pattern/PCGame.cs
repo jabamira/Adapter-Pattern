@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,7 +29,7 @@ namespace Adapter_Pattern
 
         public int getPegiAllowedAge()
         {
-        
+
             if (computerGame.getPegiAgeRating() == PegiAgeRating.P3)
             {
                 return 3;
@@ -60,10 +60,10 @@ namespace Adapter_Pattern
 
         public Requirements getRequirements()
         {
-            int gpuMemoryInGB = (int)Math.Ceiling((double)computerGame.getMinimumGpuMemoryInMegabytes() / 1024 ;
+            int gpuMemoryInGB = (int)Math.Ceiling((double)computerGame.getMinimumGpuMemoryInMegabytes() / 1024 );
             return new Requirements(
                 gpuMemoryInGB,
-                computerGame.getDiskSpaceNeededInGB() ,
+                computerGame.getDiskSpaceNeededInGB(),
                 computerGame.getRamNeededInGb(),
                 computerGame.getCoreSpeedInGhz(),
                 computerGame.getCoresNeeded()
