@@ -15,7 +15,7 @@ internal class Program
         {
             Console.WriteLine(" Indi game");
         }
-        Console.WriteLine(adapt.getPegiAllowedAge());
+        Console.WriteLine("allow age "+adapt.getPegiAllowedAge());
         Console.WriteLine(adapt.getRequirements().ToString());
        
     }
